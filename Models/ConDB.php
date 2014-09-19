@@ -8,10 +8,10 @@
 class ConDB {
     //put your code here
         
-        private $serverName = ""; //serverName\instanceName
-        private $userName = "";//Database user name, ex: root
-        private $pass = "";//Database user password
-        private $database = "";//Database name
+        private $serverName = "localhost"; //serverName\instanceName
+        private $userName = "chatappdb";//Database user name, ex: root
+        private $pass = "bloodheart";//Database user password
+        private $database = "chatapp";//Database name
         public $conn;
         public $flag_conn;
         public function __construct(){
