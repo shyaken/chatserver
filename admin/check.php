@@ -8,7 +8,7 @@ session_start();
 require '../Models/ConDB.php';
 $db = new ConDB();
 
-echo "What the hell";
+die("What the hell");
 
 $selectUserQry = "select * from admin where admin_username = '" . $_REQUEST['username'] . "' and admin_password='" . $_REQUEST['password'] . "'";
 $selectUserRes = mysql_query($selectUserQry, $db->conn);
