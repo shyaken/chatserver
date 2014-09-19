@@ -5,12 +5,8 @@
  * and open the template in the editor.
  */
 session_start();
-echo 'fuck';
 require '../Models/ConDB.php';
-die("What the hell");
 $db = new ConDB();
-
-die("What the hell");
 
 $selectUserQry = "select * from admin where admin_username = '" . $_REQUEST['username'] . "' and admin_password='" . $_REQUEST['password'] . "'";
 $selectUserRes = mysql_query($selectUserQry, $db->conn);
