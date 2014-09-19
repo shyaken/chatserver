@@ -5,7 +5,9 @@
  * and open the template in the editor.
  */
 session_start();
+echo 'fuck';
 require '../Models/ConDB.php';
+die("What the hell");
 $db = new ConDB();
 
 die("What the hell");
